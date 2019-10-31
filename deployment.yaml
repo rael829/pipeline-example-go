@@ -29,7 +29,7 @@ spec:
     spec:
       imagePullSecrets:
       #- name: pipeline-docker-registry
-      - name: sonatype-nexus
+      - name: nexus-docker
       containers:
       - name: helloserver
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
