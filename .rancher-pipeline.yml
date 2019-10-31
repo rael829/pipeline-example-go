@@ -18,7 +18,8 @@ stages:
       pushRemote: true
       registry: 172.16.1.80:30314
     env:
-      PLUGIN_INSECURE: true
+      PLUGIN_INSECURE: "true"
+      PLUGIN_MIRROR: http://sonatype-nexus.sonatype-nexus:8003
 - name: Deploy
   steps:
   - applyYamlConfig:
