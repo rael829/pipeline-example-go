@@ -28,7 +28,8 @@ spec:
         app: helloserver
     spec:
       imagePullSecrets:
-      - name: pipeline-docker-registry
+      #- name: pipeline-docker-registry
+      - name: sonatype-nexus
       containers:
       - name: helloserver
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
